@@ -1,0 +1,9 @@
+{% extends '::base.html.twig'%}
+
+{% block body%}
+Hello world Symfony
+
+{% for users in user %}
+{{ users.firstName }} {{ users.lastName }} {{ users.email }}
+{% endfor %}
+{% endblock %}
